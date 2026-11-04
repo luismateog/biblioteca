@@ -61,6 +61,8 @@ El módulo de búsquedas y reportes presenta consultas descriptivas para libros,
 
 El menú de persistencia ofrece guardar, cargar y reiniciar con confirmación S/N; las acciones son simuladas y no leen ni escriben archivos.
 
+El flujo de salida pregunta si se desea guardar y solicita confirmación antes de cerrar la aplicación.
+
 Para crear e integrar una rama durante el trabajo:
 
 ```bash
