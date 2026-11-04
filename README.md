@@ -57,6 +57,8 @@ El módulo de usuarios incluye registro, listado, consulta, edición de datos y 
 
 El módulo de préstamos incluye creación con validaciones descriptivas, listados por estado, consulta de detalle, devolución y reglas sugeridas para eliminación.
 
+El módulo de búsquedas y reportes presenta consultas descriptivas para libros, usuarios, préstamos por usuario o libro, vencidos y resumen general.
+
 Para crear e integrar una rama durante el trabajo:
 
 ```bash
