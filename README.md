@@ -55,6 +55,8 @@ Los submenús de libros incluyen registrar, listar por estado, consultar detalle
 
 El módulo de usuarios incluye registro, listado, consulta, edición de datos y estado, y eliminación con validación sugerida de préstamos activos.
 
+El módulo de préstamos incluye creación con validaciones descriptivas, listados por estado, consulta de detalle, devolución y reglas sugeridas para eliminación.
+
 Para crear e integrar una rama durante el trabajo:
 
 ```bash
