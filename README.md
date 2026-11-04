@@ -59,6 +59,8 @@ El módulo de préstamos incluye creación con validaciones descriptivas, listad
 
 El módulo de búsquedas y reportes presenta consultas descriptivas para libros, usuarios, préstamos por usuario o libro, vencidos y resumen general.
 
+El menú de persistencia ofrece guardar, cargar y reiniciar con confirmación S/N; las acciones son simuladas y no leen ni escriben archivos.
+
 Para crear e integrar una rama durante el trabajo:
 
 ```bash
