@@ -53,6 +53,8 @@ Ramas de módulo solicitadas:
 
 Los submenús de libros incluyen registrar, listar por estado, consultar detalle, actualizar por campo y eliminar con su regla sugerida.
 
+El módulo de usuarios incluye registro, listado, consulta, edición de datos y estado, y eliminación con validación sugerida de préstamos activos.
+
 Para crear e integrar una rama durante el trabajo:
 
 ```bash
