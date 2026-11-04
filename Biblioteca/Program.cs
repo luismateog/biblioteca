@@ -34,7 +34,7 @@ internal static class Program
         {
             Console.Write($"{prompt} ({min}-{max}): ");
             string? input = Console.ReadLine();
-            if (int.TryParse(input, out int option) && option >= min && option <= max) return option;
+            if (int.TryParse(input?.Trim(), out int option) && option >= min && option <= max) return option;
             Console.WriteLine("Entrada no válida. Intente nuevamente.");
         }
     }
