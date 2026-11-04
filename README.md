@@ -41,7 +41,6 @@ El flujo propuesto para la actividad parte de `main`, crea `develop` y trabaja c
 
 Ramas de módulo solicitadas:
 
-- `feature/project-bootstrap`
 - `feature/main-menu-navigation`
 - `feature/books-menu`
 - `feature/users-menu`
@@ -49,6 +48,10 @@ Ramas de módulo solicitadas:
 - `feature/search-reports-menu`
 - `feature/persistence-menu`
 - `feature/exit-flow`
+
+`feature/project-bootstrap` se omite en esta entrega. La estructura inicial ya estaba incluida en `main` antes de iniciar el flujo Git Flow.
+
+Los submenús de libros incluyen registrar, listar por estado, consultar detalle, actualizar por campo y eliminar con su regla sugerida.
 
 Para crear e integrar una rama durante el trabajo:
 
