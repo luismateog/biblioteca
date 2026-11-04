@@ -41,7 +41,6 @@ El flujo propuesto para la actividad parte de `main`, crea `develop` y trabaja c
 
 Ramas de módulo solicitadas:
 
-- `feature/project-bootstrap`
 - `feature/main-menu-navigation`
 - `feature/books-menu`
 - `feature/users-menu`
@@ -49,6 +48,20 @@ Ramas de módulo solicitadas:
 - `feature/search-reports-menu`
 - `feature/persistence-menu`
 - `feature/exit-flow`
+
+`feature/project-bootstrap` se omite en esta entrega. La estructura inicial ya estaba incluida en `main` antes de iniciar el flujo Git Flow.
+
+Los submenús de libros incluyen registrar, listar por estado, consultar detalle, actualizar por campo y eliminar con su regla sugerida.
+
+El módulo de usuarios incluye registro, listado, consulta, edición de datos y estado, y eliminación con validación sugerida de préstamos activos.
+
+El módulo de préstamos incluye creación con validaciones descriptivas, listados por estado, consulta de detalle, devolución y reglas sugeridas para eliminación.
+
+El módulo de búsquedas y reportes presenta consultas descriptivas para libros, usuarios, préstamos por usuario o libro, vencidos y resumen general.
+
+El menú de persistencia ofrece guardar, cargar y reiniciar con confirmación S/N; las acciones son simuladas y no leen ni escriben archivos.
+
+El flujo de salida pregunta si se desea guardar y solicita confirmación antes de cerrar la aplicación.
 
 Para crear e integrar una rama durante el trabajo:
 
