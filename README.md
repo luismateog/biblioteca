@@ -79,3 +79,15 @@ Al terminar, se puede cerrar el incremento con `git switch main` y `git merge --
 ## Alcance académico
 
 Este ejercicio practica funciones estáticas, estructuras de control, lectura de entradas y navegación por menús. Las reglas de validación de libros, usuarios y préstamos aparecen como mensajes orientativos; no se ejecutan operaciones CRUD ni persistencia real.
+
+## Modelos de dominio (EV07)
+
+La carpeta `Models/` contiene `Libro`, `Usuario`, `Prestamo` y `EstadoPrestamo`. Desde la opción **7. Demostración de modelos** del menú principal se crean dos libros, dos usuarios y un préstamo, y se muestran sus resúmenes, detalles y validaciones.
+
+Ramas feature de la actividad:
+
+- `feature/models-libro`
+- `feature/models-usuario`
+- `feature/models-prestamo`
+- `feature/models-enum-estado-prestamo`
+- `feature/models-testing-objetos`

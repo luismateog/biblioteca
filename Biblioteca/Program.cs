@@ -1,3 +1,4 @@
+using Biblioteca.Models;
 using System;
 
 internal static class Program
@@ -14,8 +15,8 @@ internal static class Program
         {
             Console.Clear();
             Console.WriteLine("=== SISTEMA DE GESTIÓN DE BIBLIOTECA ===");
-            Console.WriteLine("1. Libros\n2. Usuarios\n3. Préstamos\n4. Búsquedas y reportes\n5. Guardar / Cargar datos\n6. Salir");
-            switch (ReadOption("Seleccione una opción", 1, 6))
+            Console.WriteLine("1. Libros\n2. Usuarios\n3. Préstamos\n4. Búsquedas y reportes\n5. Guardar / Cargar datos\n6. Salir\n7. Demostración de modelos");
+            switch (ReadOption("Seleccione una opción", 1, 7))
             {
                 case 1: ShowBooksMenu(); break;
                 case 2: ShowUsersMenu(); break;
@@ -23,11 +24,49 @@ internal static class Program
                 case 4: ShowSearchReportsMenu(); break;
                 case 5: ShowPersistenceMenu(); break;
                 case 6: salir = ConfirmExitAndSave(); break;
+                case 7: ShowModelExamples(); break;
             }
         }
         Console.WriteLine("Gracias por utilizar el sistema. Hasta pronto.");
     }
 
+    private static void ShowModelExamples()
+    {
+        Console.Clear();
+        Console.WriteLine("=== DEMOSTRACIÓN DE MODELOS ===");
+
+        var libro1 = new Libro(1, "Cien años de soledad", "Gabriel García Márquez", "978-0307474728", 1967, "Novela");
+        var libro2 = new Libro(2, "El principito", "Antoine de Saint-Exupéry", "978-0156012195", 1943, "Fábula");
+        var usuario1 = new Usuario(1, "Ana Pérez", "10203040", "ana@example.com", "3001234567");
+        var usuario2 = new Usuario(2, "Luis Gómez", "50607080", "luis@example.com", "3109876543");
+        var prestamo = new Prestamo(1, libro1, usuario1, DateTime.Today.AddDays(-2), DateTime.Today.AddDays(12));
+
+        Console.WriteLine("\n--- Libros: resúmenes ---");
+        Console.WriteLine(libro1.ResumenCorto());
+        Console.WriteLine(libro2.ResumenCorto());
+        Console.WriteLine("\n--- Libros: detalles completos ---");
+        Console.WriteLine(libro1.DetalleCompleto());
+        Console.WriteLine(libro2.DetalleCompleto());
+        Console.WriteLine($"Validación Disponible (libro 1): {libro1.Disponible}");
+        Console.WriteLine($"Validación Disponible (libro 2): {libro2.Disponible}");
+
+        Console.WriteLine("\n--- Usuarios: resúmenes ---");
+        Console.WriteLine(usuario1.ResumenCorto());
+        Console.WriteLine(usuario2.ResumenCorto());
+        Console.WriteLine("\n--- Usuarios: detalles completos ---");
+        Console.WriteLine(usuario1.DetalleCompleto());
+        Console.WriteLine(usuario2.DetalleCompleto());
+        Console.WriteLine($"Validación Activo (usuario 1): {usuario1.Activo}");
+        Console.WriteLine($"Validación Activo (usuario 2): {usuario2.Activo}");
+
+        Console.WriteLine("\n--- Préstamo ---");
+        Console.WriteLine(prestamo.ResumenCorto());
+        Console.WriteLine(prestamo.DetalleCompleto());
+        Console.WriteLine($"Validación Estado: {prestamo.Estado}");
+        Console.WriteLine($"Validación EstaVencido(): {prestamo.EstaVencido()}");
+        Console.WriteLine($"Validación DiasTranscurridos(): {prestamo.DiasTranscurridos()}");
+        WaitForUser();
+    }
     private static int ReadOption(string prompt, int min, int max)
     {
         while (true)
