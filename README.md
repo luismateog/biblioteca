@@ -82,7 +82,7 @@ Este ejercicio practica funciones estáticas, estructuras de control, lectura de
 
 ## Modelos de dominio (EV07)
 
-La carpeta `Models/` contiene `Libro`, `Usuario`, `Prestamo` y `EstadoPrestamo`. Desde la opción **7. Demostración de modelos** del menú principal se crean dos libros, dos usuarios y un préstamo, y se muestran sus resúmenes, detalles y validaciones.
+La carpeta `Biblioteca/Models/` contiene `Libro`, `Usuario`, `Prestamo` y `EstadoPrestamo`. Desde la opción **7. Demostración de modelos** del menú principal se crean dos libros, dos usuarios y un préstamo, y se muestran sus resúmenes, detalles y validaciones.
 
 Ramas feature de la actividad:
 
